@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Bibsdb page with list of tagged content feature.
+ */
+
+include_once 'bibsdb_page_with_list_of_tagged_content.features.inc';
