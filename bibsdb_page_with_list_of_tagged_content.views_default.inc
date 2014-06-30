@@ -215,6 +215,39 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
       'label' => 'Content: Tag to expand',
     ),
   );
+
+  /* Display: Facilities - library page */
+  $handler = $view->new_display('panel_pane', 'Facilities - library page', 'panel_pane_2');
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Tags (field_ding_page_tags) */
+  $handler->display->display_options['filters']['field_ding_page_tags_tid']['id'] = 'field_ding_page_tags_tid';
+  $handler->display->display_options['filters']['field_ding_page_tags_tid']['table'] = 'field_data_field_ding_page_tags';
+  $handler->display->display_options['filters']['field_ding_page_tags_tid']['field'] = 'field_ding_page_tags_tid';
+  $handler->display->display_options['filters']['field_ding_page_tags_tid']['value'] = array(
+    0 => '85',
+  );
+  $handler->display->display_options['filters']['field_ding_page_tags_tid']['vocabulary'] = 'ding_content_tags';
+  $handler->display->display_options['pane_title'] = 'Bibsdb - Facilities - Library Page';
+  $handler->display->display_options['pane_category']['name'] = 'Taxonomy term';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['argument_input'] = array(
+    'tid' => array(
+      'type' => 'context',
+      'context' => 'entity:node.field-bibsdb-tag-to-expand',
+      'context_optional' => 0,
+      'panel' => '0',
+      'fixed' => '',
+      'label' => 'Content: Tag to expand',
+    ),
+  );
   $translatables['bibsdb_tags_list'] = array(
     t('Master'),
     t('more'),
@@ -239,6 +272,8 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
     t('Tagged content in squares'),
     t('Gå til [title]'),
     t('Bibsdb - Nodes based on tags in squares'),
+    t('Facilities - library page'),
+    t('Bibsdb - Facilities - Library Page'),
   );
   $export['bibsdb_tags_list'] = $view;
 

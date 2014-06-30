@@ -56,6 +56,58 @@ function bibsdb_page_with_list_of_tagged_content_field_default_field_instances()
     ),
   );
 
+  // Exported field_instance: 'node-ding_library-field_bibsdb_tag_to_expand'
+  $field_instances['node-ding_library-field_bibsdb_tag_to_expand'] = array(
+    'bundle' => 'ding_library',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 11,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_highlight' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_bibsdb_tag_to_expand',
+    'label' => 'Tag to expand',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 25,
+    ),
+  );
+
   // Exported field_instance: 'node-ding_page-field_bibsdb_tag_to_expand'
   $field_instances['node-ding_page-field_bibsdb_tag_to_expand'] = array(
     'bundle' => 'ding_page',
