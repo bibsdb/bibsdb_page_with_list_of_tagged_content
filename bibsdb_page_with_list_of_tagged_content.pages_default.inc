@@ -254,7 +254,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
   $handler->handler = 'panel_context';
   $handler->weight = -21;
   $handler->conf = array(
-    'title' => ' Groups (OG) with tags expanded in squares',
+    'title' => ' Bibsdb Groups (OG) with tags expanded in squares',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
