@@ -711,28 +711,6 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
     $pane->pid = 'new-19';
     $pane->panel = 'main_content';
     $pane->type = 'views_panes';
-    $pane->subtype = 'bibsdb_tags_list-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'context' => array(
-        0 => 'argument_entity_id:node_1',
-      ),
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 5;
-    $pane->locks = array();
-    $display->content['new-19'] = $pane;
-    $display->panels['main_content'][5] = 'new-19';
-    $pane = new stdClass();
-    $pane->pid = 'new-20';
-    $pane->panel = 'main_content';
-    $pane->type = 'views_panes';
     $pane->subtype = 'ding_event-ding_event_library_list';
     $pane->shown = TRUE;
     $pane->access = array();
@@ -753,6 +731,31 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
     $pane->css = array(
       'css_id' => '',
       'css_class' => 'ding-library-events',
+    );
+    $pane->extras = array();
+    $pane->position = 5;
+    $pane->locks = array();
+    $display->content['new-19'] = $pane;
+    $display->panels['main_content'][5] = 'new-19';
+    $pane = new stdClass();
+    $pane->pid = 'new-20';
+    $pane->panel = 'main_content';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'bibsdb_tags_list-panel_pane_2';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => array(
+        0 => 'argument_entity_id:node_1',
+      ),
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'ding-library-facilities',
     );
     $pane->extras = array();
     $pane->position = 6;
