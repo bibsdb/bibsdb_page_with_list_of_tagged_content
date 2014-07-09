@@ -23,6 +23,7 @@ features[field_instance][] = node-ding_page-field_bibsdb_weight
 features[image][] = bibsdb_list_large
 features[image][] = bibsdb_list_medium
 features[image][] = bibsdb_list_small
+features[page_manager_handlers][] = node_view_panel_context_10
 features[page_manager_handlers][] = node_view_panel_context_6
 features[page_manager_handlers][] = node_view_panel_context_7
 features[page_manager_handlers][] = node_view_panel_context_9
