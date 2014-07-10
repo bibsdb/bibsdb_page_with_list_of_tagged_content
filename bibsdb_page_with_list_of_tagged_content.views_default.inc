@@ -22,7 +22,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['css_class'] = 'view-node-search-result';
+  $handler->display->display_options['css_class'] = 'bibsdb-facilities-list';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -106,6 +106,8 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
 
   /* Display: Tagged content in rows */
   $handler = $view->new_display('panel_pane', 'Tagged content in rows', 'ding_content_tags');
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'bibsdb-tagged-content-in-rows';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: List image */
   $handler->display->display_options['fields']['field_ding_page_list_image']['id'] = 'field_ding_page_list_image';
@@ -167,7 +169,10 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['label'] = '';
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['alter']['text'] = '[field_ding_page_body]';
+  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['element_class'] = 'bibsdb-taglist-content-wrapper';
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['empty'] = '[field_ding_page_lead]';
   /* Field: Link (arrow) */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
@@ -198,6 +203,8 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
 
   /* Display: Tagged content in squares */
   $handler = $view->new_display('panel_pane', 'Tagged content in squares', 'panel_pane_1');
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'bibsdb-tagged-content-in-squares';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'responsive_grid';
   $handler->display->display_options['style_options']['columns'] = '3';
@@ -273,7 +280,10 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['label'] = '';
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['alter']['text'] = '[field_ding_page_body]';
+  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['element_class'] = 'bibsdb-taglist-content-wrapper';
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['empty'] = '[field_ding_page_lead]';
   /* Field: Link til siden */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
@@ -283,7 +293,10 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['fields']['title_1']['label'] = '';
   $handler->display->display_options['fields']['title_1']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['title_1']['alter']['text'] = 'Gå til [title]';
+  $handler->display->display_options['fields']['title_1']['element_type'] = 'div';
+  $handler->display->display_options['fields']['title_1']['element_class'] = 'bibsdb-taglist-link-wrapper';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title_1']['element_default_classes'] = FALSE;
   $handler->display->display_options['pane_title'] = 'Bibsdb - Nodes based on tags in squares';
   $handler->display->display_options['pane_category']['name'] = 'Bibsdb';
   $handler->display->display_options['pane_category']['weight'] = '0';
