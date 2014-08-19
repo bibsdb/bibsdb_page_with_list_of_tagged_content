@@ -1,7 +1,6 @@
 name = Bibsdb page with list of tagged content
 core = 7.x
 package = Bibsdb
-php = 5.2.4
 dependencies[] = ctools
 dependencies[] = entity
 dependencies[] = features
@@ -13,7 +12,7 @@ dependencies[] = views_content
 dependencies[] = views_responsive_grid
 features[ctools][] = page_manager:pages_default:1
 features[ctools][] = views:views_default:3.0
-features[features_api][] = api:1
+features[features_api][] = api:2
 features[field_base][] = field_bibsdb_tag_to_expand
 features[field_base][] = field_bibsdb_weight
 features[field_instance][] = node-ding_group-field_bibsdb_tag_to_expand

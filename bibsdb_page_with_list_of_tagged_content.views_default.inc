@@ -1112,6 +1112,137 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
       'label' => 'Tag to expand',
     ),
   );
+
+  /* Display: Teaser in 2-col-grid with argument from pane */
+  $handler = $view->new_display('panel_pane', 'Teaser in 2-col-grid with argument from pane', 'panel_pane_5');
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'bibsdb-tagged-teasers-in-squares';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'responsive_grid';
+  $handler->display->display_options['style_options']['columns'] = '2';
+  $handler->display->display_options['style_options']['wrapper_classes'] = 'content-blocks--wrapper';
+  $handler->display->display_options['style_options']['column_classes'] = '';
+  $handler->display->display_options['style_options']['first_column_classes'] = '';
+  $handler->display->display_options['style_options']['last_column_classes'] = '';
+  $handler->display->display_options['style_options']['row_classes'] = 'content-blocks--inner  content-blocks--two';
+  $handler->display->display_options['style_options']['first_row_classes'] = '';
+  $handler->display->display_options['style_options']['last_row_classes'] = 'last';
+  $handler->display->display_options['style_options']['default_classes'] = 1;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['hide_empty'] = TRUE;
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h3';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+  /* Field: Content: Title image */
+  $handler->display->display_options['fields']['field_ding_page_title_image']['id'] = 'field_ding_page_title_image';
+  $handler->display->display_options['fields']['field_ding_page_title_image']['table'] = 'field_data_field_ding_page_title_image';
+  $handler->display->display_options['fields']['field_ding_page_title_image']['field'] = 'field_ding_page_title_image';
+  $handler->display->display_options['fields']['field_ding_page_title_image']['label'] = '';
+  $handler->display->display_options['fields']['field_ding_page_title_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ding_page_title_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_ding_page_title_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_ding_page_title_image']['type'] = 'cs_adaptive_image';
+  $handler->display->display_options['fields']['field_ding_page_title_image']['settings'] = array(
+    'image_link' => 'content',
+    'styles' => array(
+      'breakpoint_1' => '768',
+      'style_1' => 'ding_panorama_primary_small',
+      'breakpoint_2' => '500',
+      'style_2' => 'ding_panorama_primary_small',
+      'max_style' => 'ding_panorama_primary_small',
+      'fallback_style' => '',
+    ),
+  );
+  /* Field: Content: Lead - hidden */
+  $handler->display->display_options['fields']['field_ding_page_lead']['id'] = 'field_ding_page_lead';
+  $handler->display->display_options['fields']['field_ding_page_lead']['table'] = 'field_data_field_ding_page_lead';
+  $handler->display->display_options['fields']['field_ding_page_lead']['field'] = 'field_ding_page_lead';
+  $handler->display->display_options['fields']['field_ding_page_lead']['ui_name'] = 'Content: Lead - hidden';
+  $handler->display->display_options['fields']['field_ding_page_lead']['label'] = '';
+  $handler->display->display_options['fields']['field_ding_page_lead']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_ding_page_lead']['element_type'] = 'p';
+  $handler->display->display_options['fields']['field_ding_page_lead']['element_class'] = 'bibsdb-taglist-content';
+  $handler->display->display_options['fields']['field_ding_page_lead']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ding_page_lead']['element_default_classes'] = FALSE;
+  /* Field: Content: Body - hidden */
+  $handler->display->display_options['fields']['field_ding_page_body']['id'] = 'field_ding_page_body';
+  $handler->display->display_options['fields']['field_ding_page_body']['table'] = 'field_data_field_ding_page_body';
+  $handler->display->display_options['fields']['field_ding_page_body']['field'] = 'field_ding_page_body';
+  $handler->display->display_options['fields']['field_ding_page_body']['ui_name'] = 'Content: Body - hidden';
+  $handler->display->display_options['fields']['field_ding_page_body']['label'] = '';
+  $handler->display->display_options['fields']['field_ding_page_body']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_ding_page_body']['element_label_colon'] = FALSE;
+  /* Field: Body or lead  */
+  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['id'] = 'field_bibsdb_redirect_url';
+  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['table'] = 'field_data_field_bibsdb_redirect_url';
+  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['field'] = 'field_bibsdb_redirect_url';
+  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['ui_name'] = 'Body or lead ';
+  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['label'] = '';
+  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['alter']['text'] = '[field_ding_page_body]';
+  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['element_class'] = 'bibsdb-taglist-content-wrapper';
+  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['empty'] = '[field_ding_page_lead]';
+  /* Field: Link til siden */
+  $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
+  $handler->display->display_options['fields']['title_1']['table'] = 'node';
+  $handler->display->display_options['fields']['title_1']['field'] = 'title';
+  $handler->display->display_options['fields']['title_1']['ui_name'] = 'Link til siden';
+  $handler->display->display_options['fields']['title_1']['label'] = 'Gå til';
+  $handler->display->display_options['fields']['title_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title_1']['alter']['text'] = '[title]';
+  $handler->display->display_options['fields']['title_1']['element_type'] = '0';
+  $handler->display->display_options['fields']['title_1']['element_label_type'] = '0';
+  $handler->display->display_options['fields']['title_1']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['title_1']['element_wrapper_class'] = 'bibsdb-taglist-link-wrapper';
+  $handler->display->display_options['fields']['title_1']['element_default_classes'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Taxonomy term id from pane config */
+  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['ui_name'] = 'Taxonomy term id from pane config';
+  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['tid']['break_phrase'] = TRUE;
+  $handler->display->display_options['pane_title'] = 'Teaser in 2-col-grid with argument from pane';
+  $handler->display->display_options['pane_category']['name'] = 'Bibsdb';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['allow']['use_pager'] = 0;
+  $handler->display->display_options['allow']['items_per_page'] = 0;
+  $handler->display->display_options['allow']['offset'] = 0;
+  $handler->display->display_options['allow']['link_to_view'] = 0;
+  $handler->display->display_options['allow']['more_link'] = 0;
+  $handler->display->display_options['allow']['path_override'] = 0;
+  $handler->display->display_options['allow']['title_override'] = 'title_override';
+  $handler->display->display_options['allow']['exposed_form'] = 0;
+  $handler->display->display_options['allow']['fields_override'] = 0;
+  $handler->display->display_options['argument_input'] = array(
+    'tid' => array(
+      'type' => 'user',
+      'context' => 'entity:node.field-bibsdb-tag-to-expand',
+      'context_optional' => 0,
+      'panel' => '0',
+      'fixed' => '',
+      'label' => 'Tag to expand',
+    ),
+  );
   $translatables['bibsdb_tags_list'] = array(
     t('Master'),
     t('more'),
@@ -1159,6 +1290,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
     t('Se alle inspirationsfoldere >>'),
     t('Hent folder'),
     t('Tagged content in rows with argument from pane'),
+    t('Teaser in 2-col-grid with argument from pane'),
   );
   $export['bibsdb_tags_list'] = $view;
 
