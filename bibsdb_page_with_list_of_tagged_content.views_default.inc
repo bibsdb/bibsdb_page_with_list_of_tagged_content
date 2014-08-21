@@ -670,6 +670,10 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_1']['link_to_node'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content: Weight (field_bibsdb_weight) */
+  $handler->display->display_options['sorts']['field_bibsdb_weight_value']['id'] = 'field_bibsdb_weight_value';
+  $handler->display->display_options['sorts']['field_bibsdb_weight_value']['table'] = 'field_data_field_bibsdb_weight';
+  $handler->display->display_options['sorts']['field_bibsdb_weight_value']['field'] = 'field_bibsdb_weight_value';
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
