@@ -334,7 +334,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
           'name' => 'path_visibility',
           'settings' => array(
             'visibility_setting' => '1',
-            'paths' => 'indhold/litteratur',
+            'paths' => 'node/105',
           ),
           'context' => 'empty',
           'not' => FALSE,
@@ -668,7 +668,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
           'name' => 'path_visibility',
           'settings' => array(
             'visibility_setting' => '1',
-            'paths' => 'indhold/musik',
+            'paths' => 'node/95',
           ),
           'context' => 'empty',
           'not' => FALSE,
@@ -968,7 +968,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
           'name' => 'path_visibility',
           'settings' => array(
             'visibility_setting' => '1',
-            'paths' => 'indhold/film',
+            'paths' => 'node/37',
           ),
           'context' => 'empty',
           'not' => FALSE,
@@ -1268,7 +1268,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
           'name' => 'path_visibility',
           'settings' => array(
             'visibility_setting' => '1',
-            'paths' => 'indhold/computer-og-konsolspil',
+            'paths' => 'node/97',
           ),
           'context' => 'empty',
           'not' => FALSE,
@@ -1568,7 +1568,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
           'name' => 'path_visibility',
           'settings' => array(
             'visibility_setting' => '1',
-            'paths' => 'indhold/studerende-og-studiemiljo',
+            'paths' => 'node/134',
           ),
           'context' => 'empty',
           'not' => FALSE,
@@ -1868,7 +1868,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
           'name' => 'path_visibility',
           'settings' => array(
             'visibility_setting' => '1',
-            'paths' => 'indhold/flygtninge-og-indvandrere',
+            'paths' => 'node/72',
           ),
           'context' => 'empty',
           'not' => FALSE,
@@ -2193,7 +2193,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
           'name' => 'path_visibility',
           'settings' => array(
             'visibility_setting' => '1',
-            'paths' => 'indhold/aeldre',
+            'paths' => 'node/133',
           ),
           'context' => 'empty',
           'not' => FALSE,
@@ -2518,7 +2518,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
           'name' => 'path_visibility',
           'settings' => array(
             'visibility_setting' => '1',
-            'paths' => 'indhold/ordblinde-og-synshandicappede',
+            'paths' => 'node/79',
           ),
           'context' => 'empty',
           'not' => FALSE,
