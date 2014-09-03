@@ -17,7 +17,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
   $handler->task = 'node_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
-  $handler->weight = -12;
+  $handler->weight = -11;
   $handler->conf = array(
     'title' => 'Bibsdb Page with tags expanded in squares',
     'no_blocks' => 0,
@@ -3808,7 +3808,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
   $handler->task = 'node_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
-  $handler->weight = 28;
+  $handler->weight = -8;
   $handler->conf = array(
     'title' => 'Bibsdb Page with tags expanded',
     'no_blocks' => 0,
@@ -4052,7 +4052,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
   $handler->task = 'node_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
-  $handler->weight = -9;
+  $handler->weight = -10;
   $handler->conf = array(
     'title' => ' Bibsdb Groups (OG) with tags expanded in squares',
     'no_blocks' => 0,

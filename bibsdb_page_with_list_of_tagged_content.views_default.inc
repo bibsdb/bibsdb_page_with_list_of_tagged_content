@@ -248,6 +248,9 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler = $view->new_display('panel_pane', 'Teaser in 3-col-grid with argument from node', 'panel_pane_1');
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'bibsdb-tagged-teasers-in-squares';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'responsive_grid';
   $handler->display->display_options['style_options']['columns'] = '3';
@@ -460,6 +463,9 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler = $view->new_display('panel_pane', 'Teaser in 3-col-grid with argument from pane', 'panel_pane_3');
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'bibsdb-tagged-teasers-in-squares';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'responsive_grid';
   $handler->display->display_options['style_options']['columns'] = '3';
@@ -1137,6 +1143,9 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler = $view->new_display('panel_pane', 'Teaser in 2-col-grid with argument from pane', 'panel_pane_5');
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'bibsdb-tagged-teasers-in-squares';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'responsive_grid';
   $handler->display->display_options['style_options']['columns'] = '2';
