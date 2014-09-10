@@ -2843,7 +2843,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
           'name' => 'path_visibility',
           'settings' => array(
             'visibility_setting' => '1',
-            'paths' => 'indhold/born-og-unge',
+            'paths' => 'node/137',
           ),
           'context' => 'empty',
           'not' => FALSE,
@@ -3180,7 +3180,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
           'name' => 'path_visibility',
           'settings' => array(
             'visibility_setting' => '1',
-            'paths' => 'indhold/foraeldre-og-bedsteforaeldre',
+            'paths' => 'node/138',
           ),
           'context' => 'empty',
           'not' => FALSE,
