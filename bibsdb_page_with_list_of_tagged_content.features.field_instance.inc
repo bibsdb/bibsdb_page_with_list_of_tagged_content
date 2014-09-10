@@ -56,6 +56,52 @@ function bibsdb_page_with_list_of_tagged_content_field_default_field_instances()
     ),
   );
 
+  // Exported field_instance: 'node-ding_group-field_bibsdb_tags_to_expand'
+  $field_instances['node-ding_group-field_bibsdb_tags_to_expand'] = array(
+    'bundle' => 'ding_group',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_highlight' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_bibsdb_tags_to_expand',
+    'label' => 'Tags to expand',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 11,
+    ),
+  );
+
   // Exported field_instance: 'node-ding_library-field_bibsdb_tag_to_expand'
   $field_instances['node-ding_library-field_bibsdb_tag_to_expand'] = array(
     'bundle' => 'ding_library',
@@ -108,6 +154,58 @@ function bibsdb_page_with_list_of_tagged_content_field_default_field_instances()
     ),
   );
 
+  // Exported field_instance: 'node-ding_library-field_bibsdb_tags_to_expand'
+  $field_instances['node-ding_library-field_bibsdb_tags_to_expand'] = array(
+    'bundle' => 'ding_library',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 24,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_highlight' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_bibsdb_tags_to_expand',
+    'label' => 'Tags to expand',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 27,
+    ),
+  );
+
   // Exported field_instance: 'node-ding_page-field_bibsdb_tag_to_expand'
   $field_instances['node-ding_page-field_bibsdb_tag_to_expand'] = array(
     'bundle' => 'ding_page',
@@ -156,6 +254,59 @@ function bibsdb_page_with_list_of_tagged_content_field_default_field_instances()
       'settings' => array(),
       'type' => 'number',
       'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'node-ding_page-field_bibsdb_tags_to_expand'
+  $field_instances['node-ding_page-field_bibsdb_tags_to_expand'] = array(
+    'bundle' => 'ding_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '"OG" med ,
+"ELLER" med +',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 11,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_highlight' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_bibsdb_tags_to_expand',
+    'label' => 'Tags to expand',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 12,
     ),
   );
 
@@ -217,7 +368,10 @@ function bibsdb_page_with_list_of_tagged_content_field_default_field_instances()
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('"OG" med ,
+"ELLER" med +');
   t('Tag to expand');
+  t('Tags to expand');
   t('The weight this element is given in tag lists.');
   t('Weight');
 
