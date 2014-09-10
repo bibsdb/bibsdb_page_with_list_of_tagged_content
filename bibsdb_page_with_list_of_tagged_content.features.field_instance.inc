@@ -21,7 +21,7 @@ function bibsdb_page_with_list_of_tagged_content_field_default_field_instances()
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -65,10 +65,9 @@ function bibsdb_page_with_list_of_tagged_content_field_default_field_instances()
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 7,
+        'type' => 'hidden',
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -113,7 +112,7 @@ function bibsdb_page_with_list_of_tagged_content_field_default_field_instances()
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -163,10 +162,9 @@ function bibsdb_page_with_list_of_tagged_content_field_default_field_instances()
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 24,
+        'type' => 'hidden',
+        'weight' => 11,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -217,7 +215,7 @@ function bibsdb_page_with_list_of_tagged_content_field_default_field_instances()
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -267,10 +265,9 @@ function bibsdb_page_with_list_of_tagged_content_field_default_field_instances()
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 11,
+        'type' => 'hidden',
+        'weight' => 7,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -325,7 +322,7 @@ function bibsdb_page_with_list_of_tagged_content_field_default_field_instances()
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'search_result' => array(
         'label' => 'above',

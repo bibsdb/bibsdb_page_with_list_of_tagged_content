@@ -209,17 +209,16 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'Læs mere';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Taxonomy term id from node */
+  /* Contextual filter: Taxonomy term ids from node */
   $handler->display->display_options['arguments']['tid']['id'] = 'tid';
   $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['arguments']['tid']['field'] = 'tid';
-  $handler->display->display_options['arguments']['tid']['ui_name'] = 'Taxonomy term id from node';
+  $handler->display->display_options['arguments']['tid']['ui_name'] = 'Taxonomy term ids from node';
   $handler->display->display_options['arguments']['tid']['default_action'] = 'empty';
   $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['tid']['validate']['type'] = 'numeric';
   $handler->display->display_options['arguments']['tid']['break_phrase'] = TRUE;
   $handler->display->display_options['pane_title'] = 'Tagged content in rows with argument from node';
   $handler->display->display_options['pane_category']['name'] = 'Bibsdb';
@@ -236,7 +235,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['argument_input'] = array(
     'tid' => array(
       'type' => 'context',
-      'context' => 'entity:node.field-bibsdb-tag-to-expand',
+      'context' => 'entity:node.field-bibsdb-tags-to-expand',
       'context_optional' => 0,
       'panel' => '0',
       'fixed' => '',
@@ -345,17 +344,16 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['fields']['title_1']['element_wrapper_class'] = 'bibsdb-taglist-link-wrapper';
   $handler->display->display_options['fields']['title_1']['element_default_classes'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Taxonomy term id from node */
+  /* Contextual filter: Taxonomy term ids from node */
   $handler->display->display_options['arguments']['tid']['id'] = 'tid';
   $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['arguments']['tid']['field'] = 'tid';
-  $handler->display->display_options['arguments']['tid']['ui_name'] = 'Taxonomy term id from node';
+  $handler->display->display_options['arguments']['tid']['ui_name'] = 'Taxonomy term ids from node';
   $handler->display->display_options['arguments']['tid']['default_action'] = 'empty';
   $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['tid']['validate']['type'] = 'numeric';
   $handler->display->display_options['arguments']['tid']['break_phrase'] = TRUE;
   $handler->display->display_options['pane_title'] = 'Teaser in 3-col-grid with argument from node';
   $handler->display->display_options['pane_category']['name'] = 'Bibsdb';
@@ -372,7 +370,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['argument_input'] = array(
     'tid' => array(
       'type' => 'context',
-      'context' => 'entity:node.field-bibsdb-tag-to-expand',
+      'context' => 'entity:node.field-bibsdb-tags-to-expand',
       'context_optional' => 0,
       'panel' => '0',
       'fixed' => '',
@@ -1107,10 +1105,11 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'Læs mere';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Has taxonomy term ID */
+  /* Contextual filter: Taxonomy term ids from pane config */
   $handler->display->display_options['arguments']['tid']['id'] = 'tid';
   $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['arguments']['tid']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['ui_name'] = 'Taxonomy term ids from pane config';
   $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
