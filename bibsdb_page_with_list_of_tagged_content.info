@@ -36,6 +36,7 @@ features[page_manager_handlers][] = node_view_panel_context_18
 features[page_manager_handlers][] = node_view_panel_context_19
 features[page_manager_handlers][] = node_view_panel_context_20
 features[page_manager_handlers][] = node_view_panel_context_21
+features[page_manager_handlers][] = node_view_panel_context_22
 features[page_manager_handlers][] = node_view_panel_context_6
 features[page_manager_handlers][] = node_view_panel_context_7
 features[page_manager_handlers][] = node_view_panel_context_9

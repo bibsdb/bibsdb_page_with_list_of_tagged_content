@@ -17,9 +17,9 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
   $handler->task = 'node_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
-  $handler->weight = -11;
+  $handler->weight = -12;
   $handler->conf = array(
-    'title' => 'Bibsdb Page with tags expanded in squares',
+    'title' => 'Bibsdb Page - Netbiblioteket',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => '',
@@ -65,6 +65,8 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
       ),
       'logic' => 'and',
     ),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'bibsdb-page-netbiblioteket',
   );
   $display = new panels_display();
   $display->layout = '25_50_25';
@@ -343,7 +345,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'bibsdb-page-litteratur',
   );
   $display = new panels_display();
   $display->layout = '25_50_25';
@@ -677,7 +679,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'bibsdb-page-musik',
   );
   $display = new panels_display();
   $display->layout = '25_50_25';
@@ -977,7 +979,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'bibsdb-page-film',
   );
   $display = new panels_display();
   $display->layout = '25_50_25';
@@ -1277,7 +1279,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'bibsdb-page-spil',
   );
   $display = new panels_display();
   $display->layout = '25_50_25';
@@ -1577,7 +1579,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'bibsdb-page-studerende',
   );
   $display = new panels_display();
   $display->layout = '25_50_25';
@@ -1877,7 +1879,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'bibsdb-page-indvandrere',
   );
   $display = new panels_display();
   $display->layout = '25_50_25';
@@ -2202,7 +2204,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'bibsdb-page-aeldre',
   );
   $display = new panels_display();
   $display->layout = '25_50_25';
@@ -2527,7 +2529,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'bibsdb-page-ordblinde',
   );
   $display = new panels_display();
   $display->layout = '25_50_25';
@@ -2852,7 +2854,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'bibsdb-page-boern',
   );
   $display = new panels_display();
   $display->layout = '25_50_25';
@@ -3186,7 +3188,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'bibsdb-page-foraeldre',
   );
   $display = new panels_display();
   $display->layout = '25_50_25';
@@ -3517,7 +3519,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'bibsdb-page-professionelle',
   );
   $display = new panels_display();
   $display->layout = '25_50_25';
@@ -3795,6 +3797,310 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
+  $handler->name = 'node_view_panel_context_22';
+  $handler->task = 'node_view';
+  $handler->subtask = '';
+  $handler->handler = 'panel_context';
+  $handler->weight = -11;
+  $handler->conf = array(
+    'title' => 'Bibsdb Page - DK laeser',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'css_id' => 'bibsdb-taglist-page',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(
+      0 => array(
+        'identifier' => 'Library',
+        'keyword' => 'library_group',
+        'name' => 'og_group_from_node',
+        'context' => 'argument_entity_id:node_1',
+        'id' => 1,
+      ),
+      1 => array(
+        'identifier' => 'Library node',
+        'keyword' => 'library_node',
+        'name' => 'og_node_from_group',
+        'context' => 'relationship_og_group_from_node_1',
+        'id' => 1,
+      ),
+    ),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'node_type',
+          'settings' => array(
+            'type' => array(
+              'ding_page' => 'ding_page',
+            ),
+          ),
+          'context' => 'argument_entity_id:node_1',
+          'not' => FALSE,
+        ),
+        1 => array(
+          'name' => 'path_visibility',
+          'settings' => array(
+            'visibility_setting' => '1',
+            'paths' => 'node/295',
+          ),
+          'context' => 'empty',
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'bibsdb-page-dklaeser',
+  );
+  $display = new panels_display();
+  $display->layout = '25_50_25';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'left' => NULL,
+      'middle' => NULL,
+      'right' => NULL,
+      'left_sidebar' => NULL,
+      'main_content' => NULL,
+      'right_sidebar' => NULL,
+      'attachment_4_1' => NULL,
+      'attachment_4_2' => NULL,
+      'attachment_4_3' => NULL,
+      'attachment_4_4' => NULL,
+      'attachment_3_1' => NULL,
+      'attachment_3_2' => NULL,
+      'attachment_3_3' => NULL,
+      'attachment_2_1' => NULL,
+      'attachment_2_2' => NULL,
+      'attachment_1_1' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = 'dd263fde-2124-4f9b-9352-f8cd35fe1190';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-80d7af68-b5e8-499e-b5f6-7d2dbf1c09d9';
+    $pane->panel = 'left_sidebar';
+    $pane->type = 'block';
+    $pane->subtype = 'menu_block-3';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '80d7af68-b5e8-499e-b5f6-7d2dbf1c09d9';
+    $display->content['new-80d7af68-b5e8-499e-b5f6-7d2dbf1c09d9'] = $pane;
+    $display->panels['left_sidebar'][0] = 'new-80d7af68-b5e8-499e-b5f6-7d2dbf1c09d9';
+    $pane = new stdClass();
+    $pane->pid = 'new-b8cd1c45-76d5-47f9-81bf-141fb4745976';
+    $pane->panel = 'left_sidebar';
+    $pane->type = 'block';
+    $pane->subtype = 'og_menu-og_single_menu_block';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'b8cd1c45-76d5-47f9-81bf-141fb4745976';
+    $display->content['new-b8cd1c45-76d5-47f9-81bf-141fb4745976'] = $pane;
+    $display->panels['left_sidebar'][1] = 'new-b8cd1c45-76d5-47f9-81bf-141fb4745976';
+    $pane = new stdClass();
+    $pane->pid = 'new-57280457-6f9c-48cd-b5a7-f5f1cdcc323e';
+    $pane->panel = 'main_content';
+    $pane->type = 'node_title';
+    $pane->subtype = 'node_title';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'link' => 1,
+      'markup' => 'h1',
+      'id' => '',
+      'class' => '',
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '57280457-6f9c-48cd-b5a7-f5f1cdcc323e';
+    $display->content['new-57280457-6f9c-48cd-b5a7-f5f1cdcc323e'] = $pane;
+    $display->panels['main_content'][0] = 'new-57280457-6f9c-48cd-b5a7-f5f1cdcc323e';
+    $pane = new stdClass();
+    $pane->pid = 'new-4cd0922e-9bef-4475-8037-c7c0eb297608';
+    $pane->panel = 'main_content';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_ding_page_lead';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'text_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '4cd0922e-9bef-4475-8037-c7c0eb297608';
+    $display->content['new-4cd0922e-9bef-4475-8037-c7c0eb297608'] = $pane;
+    $display->panels['main_content'][1] = 'new-4cd0922e-9bef-4475-8037-c7c0eb297608';
+    $pane = new stdClass();
+    $pane->pid = 'new-190693f6-fbb5-4e25-9c0d-d76c5ad40750';
+    $pane->panel = 'main_content';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'bibsdb_tags_list-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => array(
+        0 => 'argument_entity_id:node_1',
+      ),
+      'override_title' => 1,
+      'override_title_text' => 'Gratis lydbøger til download lige nu',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = '190693f6-fbb5-4e25-9c0d-d76c5ad40750';
+    $display->content['new-190693f6-fbb5-4e25-9c0d-d76c5ad40750'] = $pane;
+    $display->panels['main_content'][2] = 'new-190693f6-fbb5-4e25-9c0d-d76c5ad40750';
+    $pane = new stdClass();
+    $pane->pid = 'new-997e11a6-2a40-4181-8a92-4d0cdb904e97';
+    $pane->panel = 'main_content';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_ding_page_body';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'text_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $pane->uuid = '997e11a6-2a40-4181-8a92-4d0cdb904e97';
+    $display->content['new-997e11a6-2a40-4181-8a92-4d0cdb904e97'] = $pane;
+    $display->panels['main_content'][3] = 'new-997e11a6-2a40-4181-8a92-4d0cdb904e97';
+    $pane = new stdClass();
+    $pane->pid = 'new-d494bb55-5105-43cf-91ff-887f87fc9bac';
+    $pane->panel = 'right_sidebar';
+    $pane->type = 'campaign';
+    $pane->subtype = 'campaign';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'ding_campaign_count' => 3,
+      'ding_campaign_offset' => 0,
+      'context' => array(
+        0 => 'argument_entity_id:node_1',
+        1 => 'relationship_og_node_from_group_1',
+        2 => 'empty',
+        3 => 'relationship_terms_from_node_1',
+      ),
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array(
+      'method' => 'simple',
+      'settings' => array(
+        'lifetime' => '600',
+        'granularity' => 'context',
+      ),
+    );
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = '';
+    $pane->uuid = 'd494bb55-5105-43cf-91ff-887f87fc9bac';
+    $display->content['new-d494bb55-5105-43cf-91ff-887f87fc9bac'] = $pane;
+    $display->panels['right_sidebar'][0] = 'new-d494bb55-5105-43cf-91ff-887f87fc9bac';
+    $pane = new stdClass();
+    $pane->pid = 'new-bc06abae-4cd3-4f35-8745-0016b1f16383';
+    $pane->panel = 'right_sidebar';
+    $pane->type = 'block';
+    $pane->subtype = 'similarterms-ding_content_tags';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = '';
+    $pane->uuid = 'bc06abae-4cd3-4f35-8745-0016b1f16383';
+    $display->content['new-bc06abae-4cd3-4f35-8745-0016b1f16383'] = $pane;
+    $display->panels['right_sidebar'][1] = 'new-bc06abae-4cd3-4f35-8745-0016b1f16383';
+  $display->hide_title = PANELS_TITLE_NONE;
+  $display->title_pane = '0';
+  $handler->conf['display'] = $display;
+  $export['node_view_panel_context_22'] = $handler;
+
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
   $handler->name = 'node_view_panel_context_6';
   $handler->task = 'node_view';
   $handler->subtask = '';
@@ -3838,6 +4144,8 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
       ),
       'logic' => 'and',
     ),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'bibsdb-page',
   );
   $display = new panels_display();
   $display->layout = '25_50_25';
@@ -4049,7 +4357,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'bibsdb-groups',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -4299,6 +4607,8 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
       ),
       'logic' => 'and',
     ),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'bibsdb-library',
   );
   $display = new panels_display();
   $display->layout = '25_50_25';
