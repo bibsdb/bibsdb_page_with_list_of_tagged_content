@@ -3982,18 +3982,18 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
     $display->content['new-4cd0922e-9bef-4475-8037-c7c0eb297608'] = $pane;
     $display->panels['main_content'][1] = 'new-4cd0922e-9bef-4475-8037-c7c0eb297608';
     $pane = new stdClass();
-    $pane->pid = 'new-190693f6-fbb5-4e25-9c0d-d76c5ad40750';
+    $pane->pid = 'new-c0604d78-35ff-429a-9307-43732df48738';
     $pane->panel = 'main_content';
     $pane->type = 'views_panes';
-    $pane->subtype = 'bibsdb_tags_list-panel_pane_1';
+    $pane->subtype = 'bibsdb_tags_list-panel_pane_3';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'context' => array(
-        0 => 'argument_entity_id:node_1',
+      'arguments' => array(
+        'tid' => '136,130',
       ),
-      'override_title' => 1,
-      'override_title_text' => 'Gratis lydbøger til download lige nu',
+      'override_title' => 0,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -4003,9 +4003,9 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $pane->uuid = '190693f6-fbb5-4e25-9c0d-d76c5ad40750';
-    $display->content['new-190693f6-fbb5-4e25-9c0d-d76c5ad40750'] = $pane;
-    $display->panels['main_content'][2] = 'new-190693f6-fbb5-4e25-9c0d-d76c5ad40750';
+    $pane->uuid = 'c0604d78-35ff-429a-9307-43732df48738';
+    $display->content['new-c0604d78-35ff-429a-9307-43732df48738'] = $pane;
+    $display->panels['main_content'][2] = 'new-c0604d78-35ff-429a-9307-43732df48738';
     $pane = new stdClass();
     $pane->pid = 'new-997e11a6-2a40-4181-8a92-4d0cdb904e97';
     $pane->panel = 'main_content';
@@ -4035,6 +4035,31 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
     $pane->uuid = '997e11a6-2a40-4181-8a92-4d0cdb904e97';
     $display->content['new-997e11a6-2a40-4181-8a92-4d0cdb904e97'] = $pane;
     $display->panels['main_content'][3] = 'new-997e11a6-2a40-4181-8a92-4d0cdb904e97';
+    $pane = new stdClass();
+    $pane->pid = 'new-3645e40b-58b8-4df0-85cd-1c9286b2f04e';
+    $pane->panel = 'main_content';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'bibsdb_tags_list-panel_pane_9';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'arguments' => array(
+        'tid' => '136,137',
+      ),
+      'override_title' => 1,
+      'override_title_text' => 'Lydbøger du kan downloade lige nu',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 4;
+    $pane->locks = array();
+    $pane->uuid = '3645e40b-58b8-4df0-85cd-1c9286b2f04e';
+    $display->content['new-3645e40b-58b8-4df0-85cd-1c9286b2f04e'] = $pane;
+    $display->panels['main_content'][4] = 'new-3645e40b-58b8-4df0-85cd-1c9286b2f04e';
     $pane = new stdClass();
     $pane->pid = 'new-d494bb55-5105-43cf-91ff-887f87fc9bac';
     $pane->panel = 'right_sidebar';
@@ -4105,7 +4130,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
   $handler->task = 'node_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
-  $handler->weight = -8;
+  $handler->weight = -7;
   $handler->conf = array(
     'title' => 'Bibsdb Page with tags expanded',
     'no_blocks' => 0,
@@ -4145,7 +4170,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'bibsdb-page',
+    'body_classes_to_add' => 'bibsdb-page-with-tags-expanded',
   );
   $display = new panels_display();
   $display->layout = '25_50_25';
@@ -4266,6 +4291,8 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
       'context' => array(
         0 => 'argument_entity_id:node_1',
       ),
+      'override_title' => 0,
+      'override_title_text' => 'Hallo',
     );
     $pane->cache = array();
     $pane->style = array(
