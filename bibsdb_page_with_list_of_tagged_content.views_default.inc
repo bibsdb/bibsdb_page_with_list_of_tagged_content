@@ -449,7 +449,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['argument_input'] = array(
     'tid' => array(
       'type' => 'context',
-      'context' => 'node_edit_form.field-bibsdb-tags-to-expand',
+      'context' => 'node_edit_form.field_bibsdb_tags_to_expand',
       'context_optional' => 0,
       'panel' => '0',
       'fixed' => '',
