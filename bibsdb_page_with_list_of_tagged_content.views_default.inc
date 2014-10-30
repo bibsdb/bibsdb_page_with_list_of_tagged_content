@@ -201,7 +201,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['fields']['field_ding_page_tags']['field'] = 'field_ding_page_tags';
   $handler->display->display_options['fields']['field_ding_page_tags']['label'] = '';
   $handler->display->display_options['fields']['field_ding_page_tags']['element_type'] = 'div';
-  $handler->display->display_options['fields']['field_ding_page_tags']['element_class'] = 'bibsdb-rowlist-tags';
+  $handler->display->display_options['fields']['field_ding_page_tags']['element_class'] = 'bibsdb-rowlist-tags label';
   $handler->display->display_options['fields']['field_ding_page_tags']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ding_page_tags']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_ding_page_tags']['delta_offset'] = '0';
@@ -1108,7 +1108,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['fields']['field_ding_page_tags']['field'] = 'field_ding_page_tags';
   $handler->display->display_options['fields']['field_ding_page_tags']['label'] = '';
   $handler->display->display_options['fields']['field_ding_page_tags']['element_type'] = 'div';
-  $handler->display->display_options['fields']['field_ding_page_tags']['element_class'] = 'bibsdb-rowlist-tags';
+  $handler->display->display_options['fields']['field_ding_page_tags']['element_class'] = 'bibsdb-rowlist-tags label';
   $handler->display->display_options['fields']['field_ding_page_tags']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ding_page_tags']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_ding_page_tags']['delta_offset'] = '0';
