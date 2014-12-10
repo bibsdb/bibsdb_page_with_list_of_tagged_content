@@ -21,6 +21,21 @@ function bibsdb_page_with_list_of_tagged_content_views_api($module = NULL, $api 
 }
 
 /**
+ * Implements hook_default_page_manager_handlers_alter().
+ */
+function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers_alter(&$data) {
+  if (isset($data['node_view_panel_context_3'])) {
+    $data['node_view_panel_context_3']->weight = -26; /* WAS: -27 */
+  }
+  if (isset($data['node_view_panel_context_4'])) {
+    $data['node_view_panel_context_4']->weight = 29; /* WAS: -26 */
+  }
+  if (isset($data['node_view_panel_context_5'])) {
+    $data['node_view_panel_context_5']->weight = -8; /* WAS: -25 */
+  }
+}
+
+/**
  * Implements hook_image_default_styles().
  */
 function bibsdb_page_with_list_of_tagged_content_image_default_styles() {
