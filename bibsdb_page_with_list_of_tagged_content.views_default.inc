@@ -102,6 +102,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['tid']['validate']['type'] = 'numeric';
   $handler->display->display_options['arguments']['tid']['break_phrase'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['reduce_duplicates'] = TRUE;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -234,6 +235,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['tid']['break_phrase'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['reduce_duplicates'] = TRUE;
   $handler->display->display_options['pane_title'] = 'Tagged content in rows with argument from node';
   $handler->display->display_options['pane_category']['name'] = 'Bibsdb';
   $handler->display->display_options['pane_category']['weight'] = '0';
@@ -369,6 +371,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['tid']['break_phrase'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['reduce_duplicates'] = TRUE;
   $handler->display->display_options['pane_title'] = 'Teaser in 3-col-grid with argument from node';
   $handler->display->display_options['pane_category']['name'] = 'Bibsdb';
   $handler->display->display_options['pane_category']['weight'] = '0';
@@ -582,6 +585,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['tid']['break_phrase'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['reduce_duplicates'] = TRUE;
   $handler->display->display_options['pane_title'] = 'Teaser in 3-col-grid with argument from pane';
   $handler->display->display_options['pane_category']['name'] = 'Bibsdb';
   $handler->display->display_options['pane_category']['weight'] = '0';
@@ -723,6 +727,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['tid']['break_phrase'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['reduce_duplicates'] = TRUE;
   $handler->display->display_options['pane_title'] = 'Img + title - 3 col - with argument from pane';
   $handler->display->display_options['pane_category']['name'] = 'Bibsdb';
   $handler->display->display_options['pane_category']['weight'] = '0';
@@ -853,6 +858,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['tid']['break_phrase'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['reduce_duplicates'] = TRUE;
   $handler->display->display_options['pane_title'] = 'Teaser in 4-col-grid with argument from pane';
   $handler->display->display_options['pane_category']['name'] = 'Bibsdb';
   $handler->display->display_options['pane_category']['weight'] = '0';
@@ -997,6 +1003,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['tid']['break_phrase'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['reduce_duplicates'] = TRUE;
   $handler->display->display_options['pane_title'] = 'Inspirationslister in 6-col-grid with argument from pane';
   $handler->display->display_options['pane_category']['name'] = 'Bibsdb';
   $handler->display->display_options['pane_category']['weight'] = '0';
@@ -1142,6 +1149,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['tid']['break_phrase'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['reduce_duplicates'] = TRUE;
   $handler->display->display_options['pane_title'] = 'Tagged content in rows with argument from pane';
   $handler->display->display_options['pane_category']['name'] = 'Bibsdb';
   $handler->display->display_options['pane_category']['weight'] = '0';
@@ -1276,6 +1284,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['tid']['break_phrase'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['reduce_duplicates'] = TRUE;
   $handler->display->display_options['pane_title'] = 'Teaser in 2-col-grid with argument from pane';
   $handler->display->display_options['pane_category']['name'] = 'Bibsdb';
   $handler->display->display_options['pane_category']['weight'] = '0';
@@ -1410,6 +1419,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['tid']['break_phrase'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['reduce_duplicates'] = TRUE;
   $handler->display->display_options['pane_title'] = 'Teaser in 1-col-grid with argument from pane';
   $handler->display->display_options['pane_category']['name'] = 'Bibsdb';
   $handler->display->display_options['pane_category']['weight'] = '0';
