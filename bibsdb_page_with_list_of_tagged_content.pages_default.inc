@@ -202,18 +202,18 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
     $display->content['new-f5e83964-56c8-41f6-84ff-3a52daf50756'] = $pane;
     $display->panels['main_content'][1] = 'new-f5e83964-56c8-41f6-84ff-3a52daf50756';
     $pane = new stdClass();
-    $pane->pid = 'new-3e0dc215-4da4-494b-bcc0-b53be5e1e0da';
+    $pane->pid = 'new-ac7e6a8f-7269-45c1-bea1-40eee9cb33a3';
     $pane->panel = 'main_content';
     $pane->type = 'views_panes';
-    $pane->subtype = 'bibsdb_tags_list-panel_pane_1';
+    $pane->subtype = 'bibsdb_tags_list-panel_pane_5';
     $pane->shown = TRUE;
-    $pane->access = array(
-      'plugins' => array(),
-    );
+    $pane->access = array();
     $pane->configuration = array(
-      'context' => array(
-        0 => 'argument_entity_id:node_1',
+      'arguments' => array(
+        'tid' => '67',
       ),
+      'override_title' => 1,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -223,9 +223,34 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $pane->uuid = '3e0dc215-4da4-494b-bcc0-b53be5e1e0da';
-    $display->content['new-3e0dc215-4da4-494b-bcc0-b53be5e1e0da'] = $pane;
-    $display->panels['main_content'][2] = 'new-3e0dc215-4da4-494b-bcc0-b53be5e1e0da';
+    $pane->uuid = 'ac7e6a8f-7269-45c1-bea1-40eee9cb33a3';
+    $display->content['new-ac7e6a8f-7269-45c1-bea1-40eee9cb33a3'] = $pane;
+    $display->panels['main_content'][2] = 'new-ac7e6a8f-7269-45c1-bea1-40eee9cb33a3';
+    $pane = new stdClass();
+    $pane->pid = 'new-dd04c9b4-02f5-422a-8ac9-aa740c2e680b';
+    $pane->panel = 'main_content';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'bibsdb_tags_list-panel_pane_10';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'arguments' => array(
+        'tid' => '74+126+68+64+73+72+65+69+71+70',
+      ),
+      'override_title' => 1,
+      'override_title_text' => 'Oversigt A-Å',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $pane->uuid = 'dd04c9b4-02f5-422a-8ac9-aa740c2e680b';
+    $display->content['new-dd04c9b4-02f5-422a-8ac9-aa740c2e680b'] = $pane;
+    $display->panels['main_content'][3] = 'new-dd04c9b4-02f5-422a-8ac9-aa740c2e680b';
     $pane = new stdClass();
     $pane->pid = 'new-1880d4ac-10bd-445b-9f1e-3b8894191472';
     $pane->panel = 'right_sidebar';
