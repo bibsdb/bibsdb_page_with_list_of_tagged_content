@@ -1443,8 +1443,8 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
     ),
   );
 
-  /* Display: One Column - Title only */
-  $handler = $view->new_display('panel_pane', 'One Column - Title only', 'panel_pane_10');
+  /* Display: One Column - Title + foldable body */
+  $handler = $view->new_display('panel_pane', 'One Column - Title + foldable body', 'panel_pane_11');
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
@@ -1471,25 +1471,30 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['text'] = '[title]<div class="info-link"><a href="/node/59"><i class="icon-info-sign"></i></a></div>';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h3';
-  $handler->display->display_options['fields']['title']['element_class'] = 'bibsdb-rowlist-heading';
+  $handler->display->display_options['fields']['title']['element_class'] = 'bibsdb-rowlist-heading bibsdb-foldable-list-title';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
-  /* Field: Link (arrow) */
-  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
-  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['ui_name'] = 'Link (arrow)';
-  $handler->display->display_options['fields']['view_node']['label'] = '';
-  $handler->display->display_options['fields']['view_node']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['view_node']['alter']['text'] = '<i class="icon-chevron-right"></i>';
-  $handler->display->display_options['fields']['view_node']['element_type'] = 'div';
-  $handler->display->display_options['fields']['view_node']['element_class'] = 'arrow-link-small';
-  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['text'] = 'Læs mere';
+  /* Field: Unfold link (info-sign) */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['ui_name'] = 'Unfold link (info-sign)';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="info-link bibsdb-toggle-fold"><a><i class="icon-info-sign"></i></a></div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['field_ding_page_body']['id'] = 'field_ding_page_body';
+  $handler->display->display_options['fields']['field_ding_page_body']['table'] = 'field_data_field_ding_page_body';
+  $handler->display->display_options['fields']['field_ding_page_body']['field'] = 'field_ding_page_body';
+  $handler->display->display_options['fields']['field_ding_page_body']['label'] = '';
+  $handler->display->display_options['fields']['field_ding_page_body']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_ding_page_body']['element_class'] = 'bibsdb-foldable-field';
+  $handler->display->display_options['fields']['field_ding_page_body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ding_page_body']['element_default_classes'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
@@ -1507,7 +1512,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['tid']['break_phrase'] = TRUE;
   $handler->display->display_options['arguments']['tid']['reduce_duplicates'] = TRUE;
-  $handler->display->display_options['pane_title'] = 'One column - Title only';
+  $handler->display->display_options['pane_title'] = 'One column - Title + foldable body';
   $handler->display->display_options['pane_category']['name'] = 'Bibsdb';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['allow']['use_pager'] = 0;
@@ -1578,8 +1583,10 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
     t('Tagged content in rows with argument from pane'),
     t('Teaser in 2-col-grid with argument from pane'),
     t('Teaser in 1-col-grid with argument from pane'),
-    t('One Column - Title only'),
-    t('One column - Title only'),
+    t('One Column - Title + foldable body'),
+    t('[title]<div class="info-link"><a href="/node/59"><i class="icon-info-sign"></i></a></div>'),
+    t('<div class="info-link bibsdb-toggle-fold"><a><i class="icon-info-sign"></i></a></div>'),
+    t('One column - Title + foldable body'),
   );
   $export['bibsdb_tags_list'] = $view;
 

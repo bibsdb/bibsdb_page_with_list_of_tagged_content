@@ -227,10 +227,10 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
     $display->content['new-ac7e6a8f-7269-45c1-bea1-40eee9cb33a3'] = $pane;
     $display->panels['main_content'][2] = 'new-ac7e6a8f-7269-45c1-bea1-40eee9cb33a3';
     $pane = new stdClass();
-    $pane->pid = 'new-dd04c9b4-02f5-422a-8ac9-aa740c2e680b';
+    $pane->pid = 'new-b6b91467-cdfd-403b-8f67-90e23acd2932';
     $pane->panel = 'main_content';
     $pane->type = 'views_panes';
-    $pane->subtype = 'bibsdb_tags_list-panel_pane_10';
+    $pane->subtype = 'bibsdb_tags_list-panel_pane_11';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -248,9 +248,9 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
-    $pane->uuid = 'dd04c9b4-02f5-422a-8ac9-aa740c2e680b';
-    $display->content['new-dd04c9b4-02f5-422a-8ac9-aa740c2e680b'] = $pane;
-    $display->panels['main_content'][3] = 'new-dd04c9b4-02f5-422a-8ac9-aa740c2e680b';
+    $pane->uuid = 'b6b91467-cdfd-403b-8f67-90e23acd2932';
+    $display->content['new-b6b91467-cdfd-403b-8f67-90e23acd2932'] = $pane;
+    $display->panels['main_content'][3] = 'new-b6b91467-cdfd-403b-8f67-90e23acd2932';
     $pane = new stdClass();
     $pane->pid = 'new-1880d4ac-10bd-445b-9f1e-3b8894191472';
     $pane->panel = 'right_sidebar';
