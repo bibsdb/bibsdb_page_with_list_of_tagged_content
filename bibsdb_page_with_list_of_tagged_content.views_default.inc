@@ -164,38 +164,13 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['fields']['title']['element_class'] = 'bibsdb-rowlist-heading';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
-  /* Field: Content: Lead - hidden */
-  $handler->display->display_options['fields']['field_ding_page_lead']['id'] = 'field_ding_page_lead';
-  $handler->display->display_options['fields']['field_ding_page_lead']['table'] = 'field_data_field_ding_page_lead';
-  $handler->display->display_options['fields']['field_ding_page_lead']['field'] = 'field_ding_page_lead';
-  $handler->display->display_options['fields']['field_ding_page_lead']['ui_name'] = 'Content: Lead - hidden';
-  $handler->display->display_options['fields']['field_ding_page_lead']['label'] = '';
-  $handler->display->display_options['fields']['field_ding_page_lead']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_ding_page_lead']['element_type'] = 'p';
-  $handler->display->display_options['fields']['field_ding_page_lead']['element_class'] = 'bibsdb-taglist-content';
-  $handler->display->display_options['fields']['field_ding_page_lead']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ding_page_lead']['element_default_classes'] = FALSE;
-  /* Field: Content: Body - hidden */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['field_ding_page_body']['id'] = 'field_ding_page_body';
   $handler->display->display_options['fields']['field_ding_page_body']['table'] = 'field_data_field_ding_page_body';
   $handler->display->display_options['fields']['field_ding_page_body']['field'] = 'field_ding_page_body';
-  $handler->display->display_options['fields']['field_ding_page_body']['ui_name'] = 'Content: Body - hidden';
+  $handler->display->display_options['fields']['field_ding_page_body']['ui_name'] = 'Content: Body';
   $handler->display->display_options['fields']['field_ding_page_body']['label'] = '';
-  $handler->display->display_options['fields']['field_ding_page_body']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ding_page_body']['element_label_colon'] = FALSE;
-  /* Field: Lead or body */
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['id'] = 'field_bibsdb_redirect_url';
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['table'] = 'field_data_field_bibsdb_redirect_url';
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['field'] = 'field_bibsdb_redirect_url';
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['ui_name'] = 'Lead or body';
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['label'] = '';
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['alter']['text'] = '[field_ding_page_body]';
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['element_type'] = 'div';
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['element_class'] = 'bibsdb-rowlist-content-wrapper';
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['empty'] = '[field_ding_page_lead]';
   /* Field: Content: Tags */
   $handler->display->display_options['fields']['field_ding_page_tags']['id'] = 'field_ding_page_tags';
   $handler->display->display_options['fields']['field_ding_page_tags']['table'] = 'field_data_field_ding_page_tags';
@@ -333,7 +308,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['fields']['field_ding_page_body']['label'] = '';
   $handler->display->display_options['fields']['field_ding_page_body']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ding_page_body']['element_label_colon'] = FALSE;
-  /* Field: Body or lead  */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['id'] = 'field_bibsdb_redirect_url';
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['table'] = 'field_data_field_bibsdb_redirect_url';
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['field'] = 'field_bibsdb_redirect_url';
@@ -548,7 +523,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['fields']['field_ding_page_body']['label'] = '';
   $handler->display->display_options['fields']['field_ding_page_body']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ding_page_body']['element_label_colon'] = FALSE;
-  /* Field: Body or lead  */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['id'] = 'field_bibsdb_redirect_url';
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['table'] = 'field_data_field_bibsdb_redirect_url';
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['field'] = 'field_bibsdb_redirect_url';
@@ -821,7 +796,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['fields']['field_ding_page_body']['label'] = '';
   $handler->display->display_options['fields']['field_ding_page_body']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ding_page_body']['element_label_colon'] = FALSE;
-  /* Field: Body or lead  */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['id'] = 'field_bibsdb_redirect_url';
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['table'] = 'field_data_field_bibsdb_redirect_url';
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['field'] = 'field_bibsdb_redirect_url';
@@ -966,7 +941,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['fields']['field_ding_page_body']['label'] = '';
   $handler->display->display_options['fields']['field_ding_page_body']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ding_page_body']['element_label_colon'] = FALSE;
-  /* Field: Body or lead  */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['id'] = 'field_bibsdb_redirect_url';
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['table'] = 'field_data_field_bibsdb_redirect_url';
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['field'] = 'field_bibsdb_redirect_url';
@@ -1080,38 +1055,13 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['fields']['title']['element_class'] = 'bibsdb-rowlist-heading';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
-  /* Field: Content: Lead - hidden */
-  $handler->display->display_options['fields']['field_ding_page_lead']['id'] = 'field_ding_page_lead';
-  $handler->display->display_options['fields']['field_ding_page_lead']['table'] = 'field_data_field_ding_page_lead';
-  $handler->display->display_options['fields']['field_ding_page_lead']['field'] = 'field_ding_page_lead';
-  $handler->display->display_options['fields']['field_ding_page_lead']['ui_name'] = 'Content: Lead - hidden';
-  $handler->display->display_options['fields']['field_ding_page_lead']['label'] = '';
-  $handler->display->display_options['fields']['field_ding_page_lead']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_ding_page_lead']['element_type'] = 'p';
-  $handler->display->display_options['fields']['field_ding_page_lead']['element_class'] = 'bibsdb-taglist-content';
-  $handler->display->display_options['fields']['field_ding_page_lead']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ding_page_lead']['element_default_classes'] = FALSE;
-  /* Field: Content: Body - hidden */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['field_ding_page_body']['id'] = 'field_ding_page_body';
   $handler->display->display_options['fields']['field_ding_page_body']['table'] = 'field_data_field_ding_page_body';
   $handler->display->display_options['fields']['field_ding_page_body']['field'] = 'field_ding_page_body';
-  $handler->display->display_options['fields']['field_ding_page_body']['ui_name'] = 'Content: Body - hidden';
+  $handler->display->display_options['fields']['field_ding_page_body']['ui_name'] = 'Content: Body';
   $handler->display->display_options['fields']['field_ding_page_body']['label'] = '';
-  $handler->display->display_options['fields']['field_ding_page_body']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ding_page_body']['element_label_colon'] = FALSE;
-  /* Field: Lead or body */
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['id'] = 'field_bibsdb_redirect_url';
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['table'] = 'field_data_field_bibsdb_redirect_url';
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['field'] = 'field_bibsdb_redirect_url';
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['ui_name'] = 'Lead or body';
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['label'] = '';
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['alter']['text'] = '[field_ding_page_body]';
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['element_type'] = 'div';
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['element_class'] = 'bibsdb-rowlist-content-wrapper';
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_bibsdb_redirect_url']['empty'] = '[field_ding_page_lead]';
   /* Field: Content: Tags */
   $handler->display->display_options['fields']['field_ding_page_tags']['id'] = 'field_ding_page_tags';
   $handler->display->display_options['fields']['field_ding_page_tags']['table'] = 'field_data_field_ding_page_tags';
@@ -1247,7 +1197,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['fields']['field_ding_page_body']['label'] = '';
   $handler->display->display_options['fields']['field_ding_page_body']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ding_page_body']['element_label_colon'] = FALSE;
-  /* Field: Body or lead  */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['id'] = 'field_bibsdb_redirect_url';
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['table'] = 'field_data_field_bibsdb_redirect_url';
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['field'] = 'field_bibsdb_redirect_url';
@@ -1382,7 +1332,7 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
   $handler->display->display_options['fields']['field_ding_page_body']['label'] = '';
   $handler->display->display_options['fields']['field_ding_page_body']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ding_page_body']['element_label_colon'] = FALSE;
-  /* Field: Body or lead  */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['id'] = 'field_bibsdb_redirect_url';
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['table'] = 'field_data_field_bibsdb_redirect_url';
   $handler->display->display_options['fields']['field_bibsdb_redirect_url']['field'] = 'field_bibsdb_redirect_url';
@@ -1554,10 +1504,10 @@ function bibsdb_page_with_list_of_tagged_content_views_default_views() {
     t('Body'),
     t('All'),
     t('Tagged content in rows with argument from node'),
-    t('[field_ding_page_body]'),
-    t('[field_ding_page_lead]'),
     t('Bibsdb'),
     t('Teaser in 3-col-grid with argument from node'),
+    t('[field_ding_page_body]'),
+    t('[field_ding_page_lead]'),
     t('Gå til'),
     t('[title]'),
     t('Facilities - library page'),

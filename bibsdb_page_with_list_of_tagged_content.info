@@ -50,3 +50,4 @@ features[page_manager_handlers][] = node_view_panel_context_6
 features[page_manager_handlers][] = node_view_panel_context_7
 features[page_manager_handlers][] = node_view_panel_context_9
 features[views_view][] = bibsdb_tags_list
+mtime = 1418213746
