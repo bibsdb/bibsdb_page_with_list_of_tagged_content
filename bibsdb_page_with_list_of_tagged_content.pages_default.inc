@@ -4191,6 +4191,14 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
           'context' => 'argument_entity_id:node_1',
           'not' => FALSE,
         ),
+        1 => array(
+          'name' => 'php',
+          'settings' => array(
+            'description' => 'Has value in Tags to expand field',
+            'php' => 'return !empty($contexts[\'argument_entity_id:node_1\']->data->field_bibsdb_tags_to_expand[\'und\'][0]);',
+          ),
+          'not' => FALSE,
+        ),
       ),
       'logic' => 'and',
     ),
@@ -4425,6 +4433,15 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
             ),
           ),
           'context' => 'argument_entity_id:node_1',
+          'not' => FALSE,
+        ),
+        1 => array(
+          'name' => 'path_visibility',
+          'settings' => array(
+            'visibility_setting' => '1',
+            'paths' => 'node/122',
+          ),
+          'context' => 'empty',
           'not' => FALSE,
         ),
       ),
