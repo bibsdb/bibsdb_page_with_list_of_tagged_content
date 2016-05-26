@@ -4194,7 +4194,7 @@ function bibsdb_page_with_list_of_tagged_content_default_page_manager_handlers()
         1 => array(
           'name' => 'php',
           'settings' => array(
-            'description' => 'Has value in Tags to expand field',
+            'description' => 'Only if bibsdb_tags_to_expand holds content',
             'php' => 'return !empty($contexts[\'argument_entity_id:node_1\']->data->field_bibsdb_tags_to_expand[\'und\'][0]);',
           ),
           'not' => FALSE,
